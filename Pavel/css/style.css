@@ -1,5 +1,6 @@
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 header {
     background: #EEEFF1;
@@ -20,6 +21,21 @@ nav {
     color: #000000;
     margin-bottom: 150px;
     
+}
+nav a {
+    font-style: bold;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-decoration: none;
+}
+nav a:hover {
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    color: #34547A;
+    transform: scale(1.1);
 }
 ul {
     display: flex;
@@ -48,6 +64,7 @@ font-size: 48px;
 line-height: 79px;
 margin-bottom: 30px;
 color: #000000;
+animation: alan 3s;
 }
 
 .headform1 p {
@@ -71,11 +88,15 @@ margin-bottom: 30px;
     width: 175px;
     height: 50px;
 }
+.headform1 button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
 .about {
     text-align: center;
     margin: 70px 0px;
 }
-.about h1 {
+.about h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -103,7 +124,7 @@ margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
-.section3_1 h1 {
+.section3_1 h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -123,7 +144,7 @@ margin-bottom: 30px;
 .section3_1 {
     margin: 20px 0px;
 }
-.section3_1 h1 {
+.section3_1 h2 {
     margin-bottom: 20px;
 }
 .section3_1 p {
@@ -143,7 +164,7 @@ progress {
     padding: 60px 0px;
     background-color: #EEEFF1;
 }
-.section4 h1 {
+.section4 h2 {
 font-style: normal;
 font-weight: 500;
 font-size: 48px;
@@ -182,7 +203,7 @@ margin-bottom: 30px;
     background: #EEEFF1;
     padding: 100px 0px;
 }
-.forms h1 {
+.forms h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -240,6 +261,10 @@ margin-bottom: 30px;
     width:150px;
     height: 50px;
 }
+.forms button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
 .forma {
     text-align: center;
 }
@@ -248,7 +273,7 @@ footer {
     padding: 30px 0px;
     
 }
-footer h1 {
+footer h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
@@ -271,4 +296,20 @@ footer p {
 }
 .icons i {
     width: 50px;
+}
+@keyframes alan {
+        from {
+            margin-top: 100%;
+            width: 300%;
+          }
+        
+          50% {
+            margin-top: 50%;
+            width: 200%;
+          }
+        
+          to {
+            margin-top: 0%;
+            width: 100%;
+          }
 }
